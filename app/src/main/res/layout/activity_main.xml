@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgAlbum"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAlbum"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imgAlbum"
+        app:layout_constraintStart_toStartOf="@+id/imgAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlbum" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:progressBackgroundTint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtAlbum"
+        app:layout_constraintStart_toStartOf="@+id/txtAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlbum" />
+
+    <ImageButton
+        android:id="@+id/btnPrev"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="64dp"
+
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
+        app:layout_constraintStart_toStartOf="@+id/txtAlbum"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/btnPrev"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="@+id/txtAlbum"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBeast"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/ic_baseline_local_fire_department"
+            app:tint="@color/colorOff" />
+
+        <ImageView
+            android:id="@+id/btnReps"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/ic_baseline_fitness_center"
+            app:tint="@color/colorOff" />
+
+        <ImageView
+            android:id="@+id/btnFree"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ic_baseline_flight"
+            app:tint="@color/colorOff" />
+
+        <ImageView
+            android:id="@+id/btnTech"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/ic_baseline_memory"
+            app:tint="@color/colorOff" />
+
+        <ImageView
+            android:id="@+id/btnDance"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/ic_baseline_accessibility_new"
+            app:tint="@color/colorOff" />
+
+        <ImageView
+            android:id="@+id/btnRandom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_dice_icon_png"
+            app:tint="@color/colorOff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

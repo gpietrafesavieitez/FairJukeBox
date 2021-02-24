@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#C2185B</color>
+
+    <color name="colorFree">#FFEE58</color>
+    <color name="colorBeast">#EF5350</color>
+    <color name="colorReps">#42A5F5</color>
+    <color name="colorTech">#7E57C2</color>
+    <color name="colorDance">#9CCC65</color>
+    <color name="colorOff">#989FA4</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="cyan">#33B5E5</color>
+</resources>
